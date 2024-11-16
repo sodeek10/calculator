@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    max-width: 200px;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(49, 132, 95);
+    transition: background-color 1s;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    border: 1px solid;
+}
+
+#box1 {
+    width: 196px;
+    height: 40px;
+    border: 3px solid;
+    background-color: whitesmoke;
+}
+
+
+.Box2 {
+    display: flex;
+    width: 98%;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 3px solid;
+}
+
+.num {
+    width: 50px;
+    height: 30px;
+    gap: 2px;
+    border: 2px solid;
+    margin: 2px 1px 1px 10px;
+
+
+}
+
+.button {
+    padding: 15px 2px 0px 4px;
+}
+
+#but {
+    width: 45px;
+    height: 35px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="./calculator.css">
+
+<body>
+    <div class="box">
+        <input type="text" class="box1" name="" id="box1">
+        <div class="Box2 hidden" id="box2">
+            <input type="text" name="" id="a" placeholder="a" class="num">
+            <input type="text" name="" id="b" class="num" placeholder="b">
+            <input type="text" name="" id="c" class="num" placeholder="c">
+        </div>
+        <div class="button">
+            <input type="button" value="c" id="but" onclick="clearDisplay()">
+            <input type="button" value="%" id="but" onclick="operator('%')" class="signs">
+            <input type="button" value="<=" id="but" onclick="Delete('<=')">
+            <input type="button" value="÷" id="but" onclick="operator('/')" class="signs"><br>
+            <input type="button" value="7" id="but" onclick="appendNumber(7)" class="btn">
+            <input type="button" value="8" id="but" onclick="appendNumber(8)" class="btn">
+            <input type="button" value="9" id="but" onclick="appendNumber(9)" class="btn">
+            <input type="button" value="×" id="but" onclick="operator('x')" class="signs"><br>
+            <input type="button" value="4" id="but" onclick="appendNumber(4)" class="btn">
+            <input type="button" value="5" id="but" onclick="appendNumber(5)" class="btn">
+            <input type="button" value="6" id="but" onclick="appendNumber(6)" class="btn">
+            <input type="button" value="-" id="but" onclick="operator('-')" class="signs"><br>
+            <input type="button" value="1" id="but" onclick="appendNumber(1)" class="btn">
+            <input type="button" value="2" id="but" onclick="appendNumber(2)" class="btn">
+            <input type="button" value="3" id="but" onclick="appendNumber(3)" class="btn">
+            <input type="button" value="+" id="but" onclick="operator('+')" class="signs"><br>
+            <input type="button" value="quad" id="but" onclick="toggleQuadratic()">
+            <input type="button" value="0" id="but" onclick="appendNumber(0)" class="btn">
+            <input type="button" value="." id="but" onclick="appendNumber('.')" class="btn">
+            <input type="button" value="=" id="but" onclick="calculate()">
+
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
